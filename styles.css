@@ -1,9 +1,11 @@
 html {
-    height: 100%;
+    background-image: linear-gradient(#FC5E55, #FA4083);
 }
 
 .container {
-    
+    background-image: url(img/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
     width: 1024px;
     min-height: 300px;
     margin-left: auto;
@@ -28,12 +30,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid lightgray;
 }
 
 main {
     min-height: 300px;
     display: flex;
     align-items: center;
+}
+
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
 }
 
 .cards {
@@ -48,6 +56,7 @@ main {
     background-position: bottom;
     min-height: 250px;
     width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
 }
 
 .card2 {
@@ -56,6 +65,7 @@ main {
     background-position: bottom;
     width: 30%;
     min-height: 250px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
 }
 
 .card3 {
@@ -64,7 +74,7 @@ main {
     background-position: bottom;
     width: 30%;
     min-height: 250px;
-
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
 }
 
 .card1, .card2, .card3 {
@@ -85,6 +95,7 @@ h1 {
     font-size: 3.25rem;
     font-family: 'Playfair Display', serif;
     margin-bottom: 1rem;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.164);
 }
 
 h2 {
@@ -115,7 +126,72 @@ p {
     font-family: 'Playfair Display', serif;
     padding: 11px 25px;
     display: inline-block;
+    border-radius: 12px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.164);
 }
+
+.myButton:hover {
+    background-color: #33ff20;
+    transition-duration: 1s;
+}
+
+.navbutton {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding: 8px 30px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.tbox {
+    width: 37%;
+    padding: 50px;
+    border: 1px solid white;
+    /* box-sizing: border-box; */
+    margin-top: 50px;
+}
+
+.tbox :last-child {
+    font-size: .8ems;
+    padding: 30px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    margin-left: -30px;
+    text-align: center;
+}
+
+.navbutton:hover .dropdown {
+    display: block;
+}
+
+.dropdown .navbutton {
+    width: 120px;
+    background-color: white;
+}
+
+.dropdown .navbutton a {
+    width: 120px;
+    background-color: white;
+    color: #FA4083;
+}
+
+
+
 
 
 
